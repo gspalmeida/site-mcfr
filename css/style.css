@@ -1,0 +1,623 @@
+/*CSS PADRAO DE TODAS AS PÁGINAS*/
+#navbar-wrapper{
+  padding-top: 12px!important;
+  padding-bottom: 12px!important;
+}
+.texto-escuro-mas-nao-muito{
+  color: #0d253a!important;
+}
+.fw-400{
+  font-weight: 400!important;
+}
+.fw-500{
+  font-weight: 500!important;
+}
+.fw-600{
+  font-weight: 600!important;
+}
+.size-1rem{
+  font-size: 1rem!important;
+}
+.size-15rem{
+  font-size: 1.5rem!important;
+}
+.size-2rem{
+  font-size: 2rem!important;
+}
+.size-3rem{
+  font-size: 3rem!important;
+}
+.size-4rem{
+  font-size: 4rem!important;
+}
+.size-5rem{
+  font-size: 5rem!important;
+}
+.vermelho-escurro-mcfr{
+  background-color: #8D001A !important;
+}
+.hide-section{
+  display: none !important;
+}
+.navbar-custom-color{
+  background-color: #030023;
+  color: #ffffff !important;
+}
+.social-custom-color{
+  background-color: #030023;
+}
+.footer-custom-color{
+  background-color: #0a0732;
+}
+.btn-footer-contact{
+  background-color: #0A006f !important;
+}
+.copyright-custom-color{
+  background-color: rgba(0,0,0,.2);
+}
+#modalContatoNavbar .modal-header{
+  background-color: #0A006F;
+}
+.btn-outline-modal-contato{
+  border: 2px solid #040033!important;
+  background-color: transparent!important;
+  color: #040033!important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*FIXED BUTTON personalizado*/
+.fixed-action-btn.active ul {
+  height: auto !important;
+}
+.bg-color-fixed-btn{
+  background-color: #8D001A;
+}
+@media (min-width: 768px) {
+  .btn-floating.btn-lg {
+    width: 160px;
+    height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 10em;
+  }
+  #fixed-btn{
+    width: 215px;
+    height: 50px;
+  }
+  .btn-floating strong{
+    font-family: Roboto,sans-serif !important;
+    font-weight: 600 !important;
+    font-size: .94rem !important;
+    font-style: normal !important;
+    text-align: start !important;
+    text-transform: uppercase !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    margin-bottom: 30px !important;
+    margin-top: auto !important;
+  }
+  .btn-floating i{
+    position: relative;
+    bottom: 25%;
+  }
+  #fixed-btn i{
+    position: relative;
+    bottom: 15%;
+  }
+}
+@media (max-width: 767px) {
+  #fixed-btn-email-pc{
+    display: none !important;
+  }
+  #fixed-btn-pc{
+    display: none !important;
+  }
+  #fixed-btn-whats-pc{
+    display: none !important;
+  }
+  #fixed-btn-mobile{
+    display: inline !important;
+  }
+  #fixed-btn-email-mobile{
+    display: inline !important;
+  }
+  #fixed-btn-whats-mobile{
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) {
+  #fixed-btn-email-pc{
+    display: inline !important;
+  }
+  #fixed-btn-pc{
+    display: inline !important;
+  }
+  #fixed-btn-whats-pc{
+    display: inline !important;
+  }
+  #fixed-btn-mobile{
+    display: none !important;
+  }
+  #fixed-btn-email-mobile{
+    display: none !important;
+  }
+  #fixed-btn-whats-mobile{
+    display: none !important;
+  }
+}
+
+
+/*Home - Half page carousel*/
+.bg-slide-1{
+  background-image: url('../assets/banner-home-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.bg-slide-2{
+  background-image: url('../assets/banner-home-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+@media (orientation: portrait) {
+  .bg-slide-2{
+    background-image: url('../assets/banner-home-2-sm.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+.bg-slide-3{
+  background-image: url('../assets/banner-home-3.jpeg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+.bg-slide-4{
+  background-image: url('../assets/banner-home-4.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+header .view {
+  height: 100%;
+}
+header .carousel {
+  height: 100vh;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item,.carousel .carousel-inner .active {
+  height: 100%;
+}
+.carousel-overlay{
+  background-color: #03002366;
+}
+.btn-carousel-personalizado{
+  font-size: 1.1rem;
+}
+@media (max-width: 425px) {
+  header .carousel {
+    height: 84vh!important;
+  }
+}
+.carousel-custom-title{
+  font-size: 40px;
+}
+.carousel-custom-text{
+  font-size: 17px;
+}
+@media (min-width: 426px) and (max-width: 768px){
+  .carousel-custom-title{
+    font-size: 50px;
+  }
+  .carousel-custom-text{
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-custom-title{
+    font-size: 57px;
+  }
+  .carousel-custom-text{
+    font-size: 23px;
+  }
+}
+/*Home - Areas de Atuacao*/
+.btn-home-areasDeAtuacao{
+  border: 2px solid #8d001a!important;
+  background-color: transparent!important;
+  color: #8d001a!important;
+  font-size: 0.9rem;
+}
+.modalAreasDeAtuacaoHeader{
+  background-color:#600A19;
+}
+.modalAreasDeAtuacaoFormHeader{
+  background-color: #86800D;
+}
+.btnSendForm-modalAreasDeAtuacao{
+  border: 2px solid #003B53!important;
+  background-color: transparent!important;
+  color: #003B53!important;
+}
+.btnFechar-modalAreasDeAtuacao{
+  border: 2px solid #8D001A!important;
+  background-color: transparent!important;
+  color: #8D001A!important;
+}
+.btnContato-modalAreasDeAtuacao{
+  border: 2px solid #0B32E0!important;
+  background-color: transparent!important;
+  color: #0B32E0!important;
+}
+  
+/*Home - Nossa Equipe*/
+#imagemNossaEquipe{
+  background-image: url("../assets/home-nossaEquipe-equipe.png");
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 20px solid #ffffff00;
+}
+.bg-nossaEquipe {
+  background-image: url("../assets/bg-equipe-home.jpg");
+  /*background-color: #1c2331;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-home-equipe{
+  border: 2px solid #FFFFFF;!important;
+  background-color: transparent!important;
+  color: #FFFFFF;!important;
+}
+.btn-home-equipe i{
+  padding-top: 0.4rem;
+  padding-right: 2%;
+}
+.btn-home-equipe.hoverable:hover{
+  box-shadow: 0 16px 28px 0 rgba(0,0,0,.22), 0 25px 55px 0 rgba(0,0,0,.21);
+  transition: all .55s ease-in-out;
+}
+.itens-curriculo{
+  font-size: 1.1rem !important;
+  list-style-type: disc;
+  text-align: left!important;
+}
+
+/*Home - BlogSection*/
+.categ-bancario-custom-color{
+  color: #BF9E00;
+}
+.categ-civil-custom-color{
+  color: #125609;
+}
+.categ-consumidor-custom-color{
+  color: #17033A;
+}
+.categ-empresarial-custom-color{
+  color: #6F5F00;
+}
+.categ-familiar-custom-color{
+  color: #D50603;
+}
+.categ-previdenciario-custom-color{
+  color: #E24B08;
+}
+.categ-societario-custom-color{
+  color: #030D3A;
+}
+.categ-trabalhista-custom-color{
+  color: #550201;
+}
+.btn-home-blog{
+  border: 2px solid #030023;!important;
+  background-color: transparent!important;
+  color: #030023;!important;
+  font-size: 0.8rem!important;
+  font-weight: 500!important;
+  left: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  word-wrap: break-word;
+}
+.btn-home-blog-mobile{
+  border: 2px solid #030023;!important;
+  background-color: transparent!important;
+  color: #030023;!important;
+  font-size: 0.8rem!important;
+  font-weight: 500!important;
+  word-wrap: break-word;
+}
+@media (min-width: 426px) and (max-width: 991px) {
+  .max-width-40vw{
+    max-width: 40vw;
+  }
+}
+
+
+/*Áreas de Atuação - Banner*/
+.bg-banner{
+  background-image: url('../assets/banner-home-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+@media (orientation: portrait) {
+  .bg-banner{
+    background-image: url('../assets/banner-home-2-sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/*Áreas de Atuação - Serviços*/
+#areasDeAtuacaoCorpo .card{
+  min-height: 100%;
+}
+.bg-apresentacaoServicos{
+  /*background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");*/
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#000000;
+}
+.btn-detalhes-servicos{
+  border: 2px solid #550201!important;
+  background-color: transparent!important;
+  color: #550201!important;
+}
+.btn-retornar-servicos{
+  position: relative;
+  bottom: 30px;
+  background-color: #550201;
+}
+.btn-enviar-modal{
+  background-color: #550201;
+}
+#areasDeAtuacaoCorpo .img-fluid{
+  max-height: 15vh;
+}
+@media (min-width: 1199px) and (max-width: 1225px){
+  .btn-detalhes-servicos{
+    font-size: 0.79rem!important;
+    font-weight: 500;
+  }
+  .h4-responsive {
+    font-size: 120%!important;
+  }
+}
+/*Áreas de Atuação - Serviço Especifico*/
+.full-height-section{
+  min-height: 90vh;
+}
+.itens-areaDeAtuacao{
+  font-size: 1.1rem !important;
+  list-style-type: disc;
+  text-align: left!important;
+  margin: 0.4rem!important;
+}
+/*Áreas de Atuação - Modais de Contato Direcionadas*/
+@media (max-width: 425px) {
+  .modal-dialog.cascading-modal{
+    margin-top: 15% !important;
+  }
+  #modalContatoNavbar iframe{
+    height: 200px!important;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .modal-dialog.cascading-modal{
+    margin-top: 11% !important;
+  }
+  #modalContatoNavbar iframe{
+    height: 200px!important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal-dialog.cascading-modal{
+    margin-top: 7% !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .modal-dialog.cascading-modal{
+    margin-top: 5% !important;
+  }
+}
+@media (min-width: 1026px) and (max-width: 1920px) {
+  .modal-dialog.cascading-modal{
+    margin-top: 4% !important;
+  }
+}
+@media (min-width: 1921px){
+  .modal-dialog.cascading-modal{
+    margin-top: 3% !important;
+  }
+}
+
+/*Profissionais*/
+
+.bg-marisa{
+  background-image: url("../assets/profissionais-marisa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #1c2331;*/
+  height: 100%;
+}
+.bg-marcelo{
+  background-image: url("../assets/profissionais-marcelo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #1c2331;*/
+  height: 100%;
+}
+.bg-adriano{
+  background-image: url("../assets/profissionais-adriano.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #1c2331;*/
+  height: 100%;
+}
+.bg-bruna{
+  background-image: url("../assets/profissionais-bruna.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #1c2331;*/
+  height: 100%;
+}
+.btn-ligacao-profissionais{
+  background-color: #015718 !important;
+  padding: .85rem 1.65rem !important;
+  font-weight: 500 !important;
+  font-size: .94rem !important;
+}
+.btn-whatsapp-profissionais{
+  background-color: #00AC20 !important;
+  padding: .85rem 1.65rem !important;
+  font-weight: 500 !important;
+  font-size: .94rem !important;
+}
+.btn-email-profissionais {
+  background-color: #1527BE !important;
+  padding: .85rem 1.65rem !important;
+  font-weight: 500 !important;
+  font-size: .94rem !important;
+}
+.btn-ligacao-profissionais:hover{
+  color: #600a19;
+}
+.btn-whatsapp-profissionais:hover{
+  color: #600a19;
+}
+.btn-email-profissionais:hover{
+  color: #fff86a!important;
+}
+.btn-enviar-modal-contato-profissionais{
+  border: 2px solid #040033!important;
+  background-color: transparent!important;
+  color: #040033!important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.btn-profissionais-vermelho{
+  border: 2px solid #8d001a!important;
+  background-color: transparent!important;
+  color: #8d001a!important;
+  font-size: 0.9rem;
+}
+.btn-profissionais-branco{
+  border: 2px solid #ffffff !important;
+  background-color: transparent!important;
+  color: #ffffff!important;
+  font-size: 0.9rem;
+}
+.btn-profissionais-branco-bruna{
+  border: 3px solid #ffffff!important;
+  background-color: #ffffff60!important;
+  color: #480000!important;
+  font-size: 0.9rem;
+}
+@media (min-width: 992px) and (max-width: 1310px) {
+  .bg-marisa{
+    background-image: url("../assets/profissionais-marisa-lg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+  .bg-marcelo{
+    background-image: url("../assets/profissionais-marcelo-lg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+  .bg-adriano{
+    background-image: url("../assets/profissionais-adriano-lg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 991px) {
+  .bg-marisa{
+    background-image: url("../assets/profissionais-marisa-md.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 145px;
+    margin-bottom: 1em;
+  }
+  .bg-marcelo{
+    background-image: url("../assets/profissionais-marcelo-md.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 145px;
+    margin-bottom: 1em;
+  }
+  .bg-adriano{
+    background-image: url("../assets/profissionais-adriano-md.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 145px;
+    margin-bottom: 1em;
+  }
+  .bg-bruna{
+    background-image: url("../assets/profissionais-bruna-sm.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8D001A;
+    min-height: 15vh;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+}
+.testimonial-carousel .carousel-control.left {
+  top: 10%;
+  left: 1%;
+}
+.testimonial-carousel .carousel-control.right {
+  top: 10%;
+  right: 1%;
+}
+.testimonial{
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+.custom-color-pills .nav-link.active,.pills-red .show>.nav-link,.tabs-red {
+  background-color: #030023!important
+}
+.modalProfissionaisHeader {
+  background-color: #600A19;
+}
