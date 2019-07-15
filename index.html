@@ -693,7 +693,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <form>
+              <form name="marisa-form">
                 <div class="modal-body mx-3">
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
@@ -718,7 +718,7 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button id="contatoDiretoModalMarisa" type="submit" name="submit" value="submit" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                  <button id="contatoDiretoModalMarisa" type="button" onclick="enviaForm('formMarisa')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
                 </div>
               </form>
             </div>
@@ -733,7 +733,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <form>
+              <form name="marcelo-form">
                 <div class="modal-body mx-3">
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
@@ -758,7 +758,7 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button id="contatoDiretoModalMarcelo" type="submit" name="submit" value="submit" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                  <button id="contatoDiretoModalMarcelo" type="button" onclick="enviaForm('formMarcelo')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
                 </div>
               </form>
             </div>
@@ -773,7 +773,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <form>
+              <form name="adriano-form">
                 <div class="modal-body mx-3">
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
@@ -798,7 +798,7 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button id="contatoDiretoModalAdriano" type="submit" name="submit" value="submit" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                  <button id="contatoDiretoModalAdriano" type="button" onclick="enviaForm('formAdriano')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
                 </div>
               </form>
             </div>
@@ -813,7 +813,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <form>
+              <form name="bruna-form">
                 <div class="modal-body mx-3">
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
@@ -838,13 +838,13 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button id="contatoDiretoModalBruna" type="submit" name="submit" value="submit" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                  <button id="contatoDiretoModalBruna" type="button" onclick="enviaForm('formBruna')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div class="modal fade" id="modalContatoAnaPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoBrunaPC" aria-hidden="true">
+        <div class="modal fade" id="modalContatoAnaPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoAnaPC" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header text-center">
@@ -853,7 +853,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <form>
+              <form name="ana-form">
                 <div class="modal-body mx-3">
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
@@ -878,7 +878,7 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button id="contatoDiretoModalAna" type="submit" name="submit" value="submit" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                  <button id="contatoDiretoModalAna" type="button" onclick="enviaForm('formAna')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
                 </div>
               </form>
             </div>
@@ -923,49 +923,51 @@
                   <div class="col-lg-5">
                     <div class="card-body form">
                       <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Fale Conosco:</h3>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="form-contact-name" class="form-control">
-                            <label for="form-contact-name" class="">Seu Nome</label>
+                      <form id="modalContato-form" name="modalContato-form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-name" name="nome" class="form-control">
+                              <label for="form-contact-name" class="">Seu Nome</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-email" name="email" class="form-control">
+                              <label for="form-contact-email" class="">Seu e-mail</label>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="form-contact-email" class="form-control">
-                            <label for="form-contact-email" class="">Seu e-mail</label>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-phone" name="telefone" class="form-control">
+                              <label for="form-contact-phone" class="">Seu Telefone</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-company" name="assunto" class="form-control">
+                              <label for="form-contact-company" class="">Assunto</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="form-contact-phone" class="form-control">
-                            <label for="form-contact-phone" class="">Seu Telefone</label>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="md-form mb-0">
+                              <textarea type="text" id="form-contact-message" name="mensagem" class="form-control md-textarea" rows="5"></textarea>
+                              <label for="form-contact-message">Sua Mensagem</label>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="form-contact-company" class="form-control">
-                            <label for="form-contact-company" class="">Assunto</label>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center">
+                              <button type="button" class="btn btn-outline-modal-contato btn-rounded waves-effect px-3" onclick="enviaForm('formModalContato')">Enviar</button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="md-form mb-0">
-                            <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="5"></textarea>
-                            <label for="form-contact-message">Sua Mensagem</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="d-flex align-items-center justify-content-center">
-                            <button type="button" class="btn btn-outline-modal-contato btn-rounded waves-effect px-3">Enviar</button>
-                          </div>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -986,132 +988,138 @@
         </div>
       </div>
     </div>
+
   </main>
   <footer class="page-footer font-small footer-custom-color">
-  <div class="container-fluid social-custom-color">
-    <div class="row">
-      <div class="col-md-4 col-6">
-        <div class="row">
-          <div class="col-12">
-            <div class="my-2 flex-center">
-              <a class="fb-ic" href="tel:123954-7038">
-                <i class="fas fa-phone fa-lg white-text fa-2x"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <p class="text-center my-1">
-              <a href="tel:123954-7038"><span class="font-weight-bold" style="font-size: 1.1rem;">Ligar</span><br>(12)3953-7038</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-6">
-        <div class="row">
-          <div class="col-12">
-            <div class="my-2 flex-center">
-              <a class="fb-ic" href="mailto:mcfr@mcfr.com.br">
-                <i class="fas fa-envelope-open-text fa-2x white-text"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <p class="text-center my-1">
-              <a href="mailto:mcfr@mcfr.com.br"><span class="font-weight-bold" style="font-size: 1.1rem;">Email</span><br> mcfr@mcfr.com.br</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="row">
-          <div class="col-12">
-            <div class="my-2 flex-center">
-              <a href="https://goo.gl/maps/irmQms7Aqvn">
-                <i class="fas fa-map-marked-alt fa-2x white-text"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <p class="text-center my-1">
-              <a href="https://goo.gl/maps/irmQms7Aqvn"><span class="font-weight-bold" style="font-size: 1.1rem;">Endereço</span><br> Praça Anchieta, 135, salas 11 e 12 - Jacareí, SP</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-12 text-center">
-        <p class="text-center lead fw-500 my-3 h3-responsive">Atendemos em São José dos Campos, São Paulo e Jacareí. Entre em contato conosco para agendar um horário!</p>
-      </div>
-      <div class="col-md-5 text-center pt-4">
-        <iframe class="wow fadeIn slower animated" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.277290247883!2d-45.975275684600355!3d-23.305695984810406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb64550a5c13%3A0xd4d290ee633c1ee0!2sMigli%2C+C%C3%A1pua+e+Faria+Rosa+Advogados!5e0!3m2!1spt-BR!2sbr!4v1540240713568" width="80%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item mt-1">
-            <i class="far fa-clock fa-lg white-text fa-2x my-2 wow fadeInUp animated"></i>
-            <p class="wow fadeInUp slower animated">
-              <span class="font-weight-bold" style="font-size: 1.1rem;">Horário de Atendimento</span><br>
-              Segunda a Sexta - 8h as 19h
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-7 my-4 px-lg-5 wow fadeInRight slower animated">
-        <div class="card px-2 py-3 mx-3">
+    <div class="container-fluid social-custom-color">
+      <div class="row">
+        <div class="col-md-4 col-6">
           <div class="row">
             <div class="col-12">
-              <h4 class="font-weight-normal text-center black-text">Fale Conosco</h4>
+              <div class="my-2 flex-center">
+                <a class="fb-ic" href="tel:123954-7038">
+                  <i class="fas fa-phone fa-lg white-text fa-2x"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <form>
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <div class="col-md-12 py-1">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-name" class="form-control">
-                    <label for="contact-name" class="">Nome</label>
-                  </div>
-                </div>
-                <div class="col-md-12 py-1">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-email" class="form-control">
-                    <label for="contact-email" class="">Email</label>
-                  </div>
-                </div>
-                <div class="col-md-12 py-1">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-Subject" class="form-control">
-                    <label for="contact-Subject" class="">Assunto</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="md-form">
-                  <textarea type="text" id="contact-message" class="form-control md-textarea" rows="5"></textarea>
-                  <label for="contact-message">Texto do Email</label>
-                </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block btn-footer-contact">Enviar</button>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="tel:123954-7038"><span class="font-weight-bold" style="font-size: 1.1rem;">Ligar</span><br>(12)3953-7038</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="row">
+            <div class="col-12">
+              <div class="my-2 flex-center">
+                <a class="fb-ic" href="mailto:mcfr@mcfr.com.br">
+                  <i class="fas fa-envelope-open-text fa-2x white-text"></i>
+                </a>
               </div>
             </div>
-          </form>
-
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="mailto:mcfr@mcfr.com.br"><span class="font-weight-bold" style="font-size: 1.1rem;">Email</span><br> mcfr@mcfr.com.br</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="my-2 flex-center">
+                <a href="https://goo.gl/maps/irmQms7Aqvn">
+                  <i class="fas fa-map-marked-alt fa-2x white-text"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="https://goo.gl/maps/irmQms7Aqvn"><span class="font-weight-bold" style="font-size: 1.1rem;">Endereço</span><br> Praça Anchieta, 135, salas 11 e 12 - Jacareí, SP</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright copyright-custom-color text-center py-3">
-    <p class="mb-0 animated pulse infinite slow delay-2s">
-      © 2018 Copyright:<a href="http://www.galileosoft.com.br"> GalileoSoft</a>
-    </p>
-  </div>
-</footer>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 text-center">
+          <p class="text-center lead fw-500 my-3 h3-responsive">Atendemos em São José dos Campos, São Paulo e Jacareí. Entre em contato conosco para agendar um horário!</p>
+        </div>
+        <div class="col-md-5 text-center pt-4">
+          <iframe class="wow fadeIn slower animated" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.277290247883!2d-45.975275684600355!3d-23.305695984810406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb64550a5c13%3A0xd4d290ee633c1ee0!2sMigli%2C+C%C3%A1pua+e+Faria+Rosa+Advogados!5e0!3m2!1spt-BR!2sbr!4v1540240713568" width="80%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mt-1">
+              <i class="far fa-clock fa-lg white-text fa-2x my-2 wow fadeInUp animated"></i>
+              <p class="wow fadeInUp slower animated">
+                <span class="font-weight-bold" style="font-size: 1.1rem;">Horário de Atendimento</span><br>
+                Segunda a Sexta - 8h as 19h
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-7 my-4 px-lg-5 wow fadeInRight slower animated">
+          <div class="card px-2 py-3 mx-3">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="font-weight-normal text-center black-text">Fale Conosco</h4>
+              </div>
+            </div>
+            <form id="footer-form" name="footer-form">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-name" name="nome" class="form-control">
+                      <label for="footer-name" class="">Nome</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-email" name="email" class="form-control">
+                      <label for="footer-email" class="">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-phone" name="telefone" class="form-control" maxlength="14">
+                      <label for="footer-phone" class="">Seu Telefone</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="md-form mb-0">
+                    <input type="text" id="footer-subject" name="assunto" class="form-control">
+                    <label for="footer-subject" class="">Assunto</label>
+                  </div>
+                  <div class="md-form">
+                    <textarea type="text" id="footer-message" name="mensagem" class="form-control md-textarea" rows="5"></textarea>
+                    <label for="footer-message">Texto do Email</label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-primary btn-lg btn-block btn-footer-contact" id="btn-send-email-footer" onclick="enviaForm('formFooter')">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright copyright-custom-color text-center py-3">
+      <p class="mb-0 animated pulse infinite slow delay-2s">
+        © 2018 Copyright:<a href="http://www.galileosoft.com.br"> GalileoSoft</a>
+      </p>
+    </div>
+  </footer>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -1182,7 +1190,343 @@
               $('#navbar-profissionais').removeClass('active');
               $('#navbar-contato').addClass('active');
           }
-      })
+      });
+
+
+      //Loader para Envio de Forms
+      function ShowLoader() {
+        var overlay = jQuery(
+          '<div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); z-index: 10000;">' +
+          '   <div style="text-align: center; width: 100%; position: absolute; top: 40%; margin-top: -50px;"> ' +
+          '       <div class="preloader-wrapper big active"> ' +
+          '           <div class="spinner-layer spinner-blue"> ' +
+          '              <div class="circle-clipper left"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div>' +
+          '              <div class="gap-patch"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div>' +
+          '              <div class="circle-clipper right"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-red"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-yellow"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch">  ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-green"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '       </div> ' +
+          '   </div> ' +
+          '</div>');
+        overlay.appendTo(document.body);
+      }
+      function HideLoader() {
+        $('#loading-overlay').remove();
+      }
+      function notificaErro(titulo,mensagem) {
+        toastr.error(mensagem,titulo);
+      }
+      function enviaForm(origem) {
+        var validado = 1;
+        if(origem==='formFooter'){
+          $("#footer-form > div > div > div > div > input").each(function () {
+            if(this.value==""){
+              validado  = 0;
+              return false
+            }
+          });
+          $("#footer-form > div > div> div > input").each(function () {
+            if(this.value==""){
+              validado  = 0;
+              return false
+            }
+          });
+          if (validado===0){
+            notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+          }
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#footer-form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["submit"] = 'ok';
+
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formModalContato'){
+          $("#modalContato-form > div > div > div > input").each(function () {
+            if(this.value==""){
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              validado  = 0;
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContato-form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["submit"] = 'ok';
+
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formMarisa'){
+          $("#modalContatoMarisaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+          var formData = $("#modalContatoMarisaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formMarcelo'){
+          $("#modalContatoMarceloPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoMarceloPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formAdriano'){
+          $("#modalContatoAdrianoPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoAdrianoPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formBruna'){
+          $("#modalContatoBrunaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoBrunaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formAna'){
+          $("#modalContatoAnaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoAnaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+      }
   </script>
 </body>
 </html>
