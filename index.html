@@ -988,7 +988,65 @@
         </div>
       </div>
     </div>
-
+    <div class="fade modal" id="modalComunicadoCovid" tabindex="-1" role="dialog" aria-labelledby="modalContatoNavbar" aria-hidden="true">
+      <div class="modal-dialog modal-fluid cascading-modal" role="document" style="max-width: 70%!important;">
+        <div class="modal-content" style="background-color: rgba(255, 255, 255, 0.85);">
+          <div class="modal-header bg-roxo white-text mb-1">
+            <h4 class="title">COBATE AO COVID-19 E SUAS CONSEQUÊNCIAS</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-left black-text fw-500 font-italic">
+              <p>Prezados Clientes,</p>
+              <p>
+                Informamos que, devido à pandemia de COVID-19 o escritório MCFR está trabalhando temporariamente no regime de “home office”.
+              </p>
+              <p>
+                De qualquer forma, nossos profissionais estão preparados para atendê-los de forma plena, seja por telefone, videoconferência e até mesmo presencialmente, mediante agendamento prévio.
+              </p>
+              <p>
+                Além do trabalho nas suas respectivas áreas de atuação, cada sócio vem focando os esforços de sua equipe em determinadas demandas surgidas ou intensificadas em razão da atual situação social, buscando atender os clientes com maior agilidade e respaldo técnico:
+              </p>
+              <p>
+                - A sócia <a href="#" onclick="changeModal('#modalComunicadoCovid','#modalBruna')" style="text-decoration: underline;">Bruna Prado</a> vem auxiliando clientes, empregados e empregadores, a tratar das repercussões trabalhistas advindas da crise na economia, inclusive no entendimento e aplicação prática das medidas provisórias já publicadas pelo Governo Federal (MP 927 e MP 936), que tratam sobre redução de jornada de trabalho, suspensão temporária de contrato de trabalho, antecipação de férias, prorrogação de prazo de pagamento de FGTS, dentre outros.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99178-7747">(12) 98152-0019</a> // E-mail: <a href="mailto:bruna@mcfr.com.br">bruna@mcfr.com.br</a>
+              </p>
+              <p>
+                - O sócio <a href="#"  onclick="changeModal('#modalComunicadoCovid','#modalAdriano')" style="text-decoration: underline;">Adriano Migli de Faria Rosa</a> está centralizando as demandas trazidas pelos clientes com relação à necessidade renegociação de contratos comerciais (locação, fornecedores, clientes, acordos judiciais etc.), tanto por meio de negociação extrajudicial, quanto via pedido judicial.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99174 4854">(12) 99174 4854</a> // E-mail: <a href=mailto:"adriano@mcfr.com.br">adriano@mcfr.com.br</a>
+              </p>
+              <p>
+                - A sócia <a href="#" onclick="changeModal('#modalComunicadoCovid','#modalMarisa')" style="text-decoration: underline;">Marisa Migli,</a> com sua experiência na área de direito de família e sucessões, está atuando com foco na renegociação de pensão alimentícia alteração de regime de guarda de menores, obtenção de alvarás em inventários de maneira célere etc.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99178-7747">(12) 99178-7747</a> // E-mail: <a href="mailto:marisa@mcfr.com.br">marisa@mcfr.com.br</a>
+              </p>
+              <p>
+                Desejamos a todos muita saúde e uma breve retomada da normalidade econômica!
+              </p>
+              <p>
+                Migli, Cápua e Faria Rosa Advogados
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer d-flex py-1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="align-items-center justify-content-center">
+                    <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="page-footer font-small footer-custom-color">
     <div class="container-fluid social-custom-color">
@@ -1135,13 +1193,23 @@
       }
       // Efeito de slide do banner para celular
       $(document).ready(function () {
-          $('#carousel-home').hammer().on('swipeleft', function () {
-              $(this).carousel('next');
-          })
-          $('#carousel-home').hammer().on('swiperight', function () {
-              $(this).carousel('prev');
-          })
+        $('#carousel-home').hammer().on('swipeleft', function () {
+          $(this).carousel('next');
+        });
+        $('#carousel-home').hammer().on('swiperight', function () {
+          $(this).carousel('prev');
+        });
+        setTimeout(showComunicadoCovid, 2000);
       });
+      function showComunicadoCovid(){
+        $("#modalComunicadoCovid").modal('show');
+      }
+      function changeModal(modalQueSai,modalQueEntra) {
+        $(modalQueSai).modal('hide');
+        $(modalQueSai).on('hidden.bs.modal', function(){
+          $(modalQueEntra).modal('show');
+        });
+      }
       // ScrollToTop Navbar
       function scrollToTop() {
           $('body, html').animate({scrollTop: 0});

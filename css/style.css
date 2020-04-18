@@ -36,6 +36,12 @@
 .vermelho-escurro-mcfr{
   background-color: #8D001A !important;
 }
+.bg-roxo{
+  background-color: #0A0732;
+}
+.bg-cinza{
+  background-color: #f5f5f5;
+}
 .hide-section{
   display: none !important;
 }
