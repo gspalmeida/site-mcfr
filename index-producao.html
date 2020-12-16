@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MCFR</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon1.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar navbar-custom-color" id="navbar-wrapper">
+      <div class="container">
+        <a class="navbar-brand d-none d-xl-block" href="#" onclick="scrollToTop();">
+          <img src="assets/logo.png" alt="LOGO MCFR">
+        </a>
+        <a class="navbar-brand d-none d-sm-block d-xl-none" href="#" onclick="scrollToTop();">
+          <img src="assets/logo-md.png" alt="LOGO MCFR">
+        </a>
+        <a class="navbar-brand d-block d-sm-none" href="#" onclick="scrollToTop();">
+          <img src="assets/logo-sm.png" alt="LOGO MCFR">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto smooth-scroll-2">
+            <li class="nav-item active" id="navbar-index">
+              <a class="nav-link" onclick="scrollToTop();">Home</a>
+            </li>
+            <li class="nav-item" id="navbar-areasDeAtuacao">
+              <a class="nav-link" href="#areasDeAtuacao" id="linkAreasDeAtuacao">Áreas de Atuação</a>
+            </li>
+            <li class="nav-item"  id="navbar-profissionais">
+              <a class="nav-link" href="#nossaEquipe" id="linkProfissionais">Profissionais</a>
+            </li>
+            <li class="nav-item" id="navbar-contato">
+              <a class="nav-link" data-toggle="modal" data-target="#modalContatoNavbar">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/Migli-C%C3%A1pua-Faria-Rosa-739210283081937/" class="nav-link my-1" target="_blank">
+                <i class="fab fa-facebook-f pr-3"></i>
+              </a>
+            </li>
+            <li class="nav-item animated pulse infinite slower">
+              <a href="http://blog.mcfr.com.br" target="_blank" class="nav-link font-weight-bold my-1" style="border: 2px solid #dee2e6;">
+                Veja nosso Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carousel-home" class="carousel slide carousel-fade mt-5" data-ride="carousel">
+      <ol class="carousel-indicators mb-0">
+        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-home" data-slide-to="1"></li>
+        <li data-target="#carousel-home" data-slide-to="2"></li>
+        <li data-target="#carousel-home" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view bg-slide-4">
+            <div class="mask d-flex justify-content-center align-items-center carousel-overlay">
+              <div class="text-center white-text col-sm-8 wow fadeIn">
+                <h1 class="mb-2 mb-sm-4 fadeInRight slow animated carousel-custom-title">
+                  <strong>Migli, Cápua & Faria Rosa</strong>
+                </h1>
+                <h5 class="fadeInLeft slow animated carousel-custom-text">
+                  <strong>
+                    Em 1994, Marisa Migli deu início ao que hoje se tornou o Migli, Cápua e Faria Rosa Advogados. Nesses mais de vinte anos de atuação,
+                    o escritório vem oferecendo serviços jurídicos, buscando sempre uma atuação de excelência técnica somada à humanização do trabalho,
+                    com dedicação ininterrupta ao cliente e seus interesses.
+                  </strong>
+                </h5>
+                <a data-toggle="modal" data-target="#modalContatoNavbar" class="fadeInUp animated delay-1s slow btn btn-outline-white btn-lg mt-1 py-2 btn-carousel-personalizado px-2">
+                  Entrar em Contato!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="view bg-slide-1">
+            <div class="mask d-flex justify-content-center align-items-center carousel-overlay">
+              <div class="text-center white-text col-sm-8 wow fadeIn pb-4">
+                <h1 class="mb-1 fadeInLeft slow animated carousel-custom-title">
+                  <strong>Serviços</strong>
+                </h1>
+                <h5 class="fadeInRight slow animated carousel-custom-text">
+                  <strong>
+                    O escritório Migli, Cápua e Faria Rosa advogados é referência na região em diversas especialidades, nas quais atua
+                    sempre com foco no cliente e suas necessidades.
+                  </strong>
+                </h5>
+                <a class="fadeInUp animated delay-1s slow btn btn-outline-white btn-lg mt-1 py-2 btn-carousel-personalizado px-2" onclick="scrollToSection('#linkAreasDeAtuacao')">
+                  Saiba Mais!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="view bg-slide-2">
+            <div class="mask d-flex justify-content-center align-items-center carousel-overlay">
+              <div class="text-center white-text col-sm-8 wow fadeIn">
+                <h1 class="mb-4 fadeInRight slow animated carousel-custom-title">
+                  <strong>Profissionais</strong>
+                </h1>
+                <h5 class="fadeInLeft slow animated carousel-custom-text">
+                  <strong>
+                    Além de extremamente profissionais e éticos, nossos advogados são altamente qualificados, com sólida formação técnica
+                    e vasta experiência em suas áreas de atuação.
+                  </strong>
+                </h5>
+                <a href="#nossaEquipe" class="fadeInUp animated delay-1s slow btn btn-outline-white btn-lg mt-1 py-2 btn-carousel-personalizado px-2" onclick="scrollToSection('#linkProfissionais')">
+                  Ver Equipe!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="view bg-slide-3">
+            <div class="mask d-flex justify-content-center align-items-center carousel-overlay">
+              <div class="text-center white-text col-sm-8 wow fadeIn">
+                <h1 class="mb-4 fadeInLeft slow animated carousel-custom-title">
+                  <strong>Experiência e Formação Sólida</strong>
+                </h1>
+                <h5 class="fadeInRight slow animated carousel-custom-text">
+                  <strong>Profissionais completos, éticos e comprometidos!</strong>
+                </h5>
+                <a data-toggle="modal" data-target="#modalContatoNavbar" class="fadeInUp animated delay-1s slow btn btn-outline-white btn-lg mt-1 py-2 btn-carousel-personalizado px-2">
+                  Entrar em Contato!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </header>
+  <main class="pt-0">
+    <section class="container full-height-section" id="areasDeAtuacao">
+      <div class="row" id="areasDeAtuacaoTitulo">
+        <div class="col-12">
+          <h1 class="h1-responsive mt-4 mb-3 fw-500 text-center mt-4">Áreas de Atuação</h1>
+        </div>
+      </div>
+      <div id="areasDeAtuacaoCorpo">
+        <div class="row mb-2 d-flex justify-content-center">
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardFamiliar">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-familiar-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Familiar">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Família</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardEmpresarial">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-empresaria-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Empresarial">
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Empresarial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardCivel">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-civel-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Civel">
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Cível</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardSucessoes">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-sucessoes-grande.png" class="img-fluid align-self-center" alt="Imagem Sucessões">
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Sucessões</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardTrabalhista">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-trabalhista-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Trabalhista">
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Trabalhista</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardPrevidenciario">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-previdenciario-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Previdenciário">
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Previdenciário</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardBancario">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-bancario-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Bancario">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Bancário</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-4 text-center justify-content-center mb-3 px-4" id="cardConsumidor">
+            <div class="row card hoverable text-center d-flex justify-content-center align-items-center py-2">
+              <div class="row">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="assets/icone-consumidor-grande.png" class="img-fluid align-self-center" alt="Imagem Direito Consumidor">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 px-xl-0">
+                  <p class="h3-responsive fw-400 mb-0">Consumidor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-nossaEquipe container-fluid" id="nossaEquipe">
+      <div class="row flex-center" id="nossaEquipeTitulo">
+        <div class="container">
+          <div class="col-12">
+            <h1 class="h1-responsive text-white text-center mt-4 wow fadeInLeft slow animated">Advogados</h1>
+            <hr class="hr-light wow fadeInLeftBig slower animated">
+          </div>
+        </div>
+      </div>
+      <div class="row flex-center" id="nossaEquipeCorpo">
+        <div class="col-md-6 d-none d-md-flex px-2 wow fadeInLeft slow animated" id="imagemNossaEquipe"></div>
+        <div class="col-md-6 text-center margins" id="nomesProfissionais">
+          <div class="white-text mb-5">
+            <a class="h3-responsive btn-block btn-home-equipe hoverable wow fadeInRight slow animated" data-toggle="modal" data-target="#modalMarisa">Marisa Migli <i class="float-right fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+          <div class="white-text mb-5">
+            <a class="h3-responsive btn-block btn-home-equipe hoverable wow fadeInRight slow animated" data-toggle="modal" data-target="#modalAdriano">Adriano Migli de Faria Rosa <i class="float-right fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+          <div class="white-text mb-5">
+            <a class="h3-responsive btn-block btn-home-equipe hoverable wow fadeInRight slow animated" data-toggle="modal" data-target="#modalBruna">Bruna Prado de Novaes<i class="float-right fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+          <div class="white-text mb-5">
+            <a class="h3-responsive btn-block btn-home-equipe hoverable wow fadeInRight slow animated" data-toggle="modal" data-target="#modalAna">Ana Flávia Ramos <i class="float-right fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+          <div class="white-text mb-5">
+            <a class="h3-responsive btn-block btn-home-equipe hoverable wow fadeInRight slow animated" data-toggle="modal" data-target="#modalMarcelo">Marcelo Cápua <i class="float-right fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <section id="modaisDirecionadasEquipe">
+        <div class="modal fade" id="modalMarisa" tabindex="-1" role="dialog" aria-labelledby="modalMarisa" aria-hidden="true">
+          <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+            <div class="modal-content">
+              <div class="modal-header light-blue darken-3 white-text mb-1">
+                <h4 class="title">Currículo Completo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body px-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center mt-1" id="imagemMarisa">
+                      <div class="col-12 wow fadeInRight d-flex justify-content-center align-items-start">
+                        <div class="d-block text-center">
+                          <img src="assets/home-nossaEquipe-marisa.png" alt="Imagem Marisa Migli" class="img-responsive z-depth-5 added-images">
+                          <div class="text-center mx-1 mx-sm-5 mt-5 fw-400">
+                            <div class="justify-content-center">
+                              <a href="tel:(12)99178-7747" type="button" class="btn btn-ligacao-profissionais waves-effect waves-light">
+                                <i class="fa fa-2x fa-phone d-sm-none" style="color: white; transform: rotateY(180deg);"></i>
+                                <span class="d-none d-sm-block">Ligar</span>
+                              </a>
+                              <a type="button" class="btn btn-primary btn-email-profissionais waves-effect waves-light" data-toggle="modal" data-target="#modalContatoMarisaPC">
+                                <i class="fa fa-2x fa-envelope d-sm-none" style="color: white"></i>
+                                <span class="d-none d-sm-block">Email</span>
+                              </a>
+                            </div>
+                            <div class="justify-content-center mt-3">
+                              <a href="mailto:marisa@mcfr.com.br" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Email: </strong>marisa@mcfr.com.br</a>
+                              <a href="tel:(12)991787747" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Telefone: </strong>(12) 99178-7747</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 d-flex justify-content-center mt-4 mt-lg-0 black-text">
+                      <div class="col-12 justify-content-center align-items-center px-0">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center font-weight-bold mb-1">Marisa Migli:</h4>
+                          <p class="lead text-justify text-center">
+                            Marisa possui atuação focada no Direito de Família e Sucessões.
+                            É referência nestas áreas devido a sua vasta experiencia.
+                            Sempre buscando compor questões técnicas com o aspecto emocional que o tema exige.
+                            Já trabalhou, nos seus mais de 20 anos de advocacia, em diversos tipos de ações judiciais e procedimentos
+                            administrativos com alta complexidade.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            A fundadora do escritório se destaca, ainda, por suas atuações em Direito Previdenciário e na área Institucional,
+                            perante os quadros da Ordem dos Advogados do Brasil, seção São Paulo.
+                          </p>
+                        </div>
+                        <hr class="hr-dark wow fadeInRight">
+                        <div class="mb-2">
+                          <ul>
+                            <li class="lead itens-curriculo">Presidente da 46ª subseção da Ordem dos Advogados do Brasil, subseção da cidade de Jacareí/SP,<strong> triênio 2013/2015</strong></li>
+                            <li class="lead itens-curriculo">Integrante da 4ª Cama Recursal da Ordem dos Advogados do Brasil – Seccional São Paulo,<strong> triênio 2016/2018</strong></li>
+                            <li class="lead itens-curriculo">Relatora do XVI Tribunal de Ética e Disciplina da Ordem dos Advogados do Brasil,<strong> triênio 2016/2018</strong></li>
+                            <li class="lead itens-curriculo">Conselheira Seccional da Ordem dos Advogados do Brasil – Seção São Paulo (OAB/SP),<strong> triênio 2016/2018</strong></li>
+                            <li class="lead itens-curriculo">Conselheira Seccional da Ordem dos Advogados do Brasil – Seção São Paulo (OAB/SP),<strong> triênio 2019/2021</strong></li>
+                            <li class="lead itens-curriculo">Pós-Graduada em Direito de Família e Sucessões pela <strong>Escola Paulista de Direito – EPD, 2017</strong></li>
+                            <li class="lead itens-curriculo">Pós-Graduada em Direito Trabalhista e Previdenciário pela <strong>Fundação Valeparaibana de Ensino – UNIVAP, 2009</strong></li>
+                            <li class="lead itens-curriculo">Formada em Direito pela <strong>Fundação Valeparaibana de Ensino – UNIVAP, 1993</strong></li>
+                            <li class="lead itens-curriculo">Pedagoga especializada em Administração, pela <strong>Fundação Valeparaibana de Ensino – UNIVAP, 1986</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex py-1">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="align-items-center justify-content-center">
+                        <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalAdriano" tabindex="-1" role="dialog" aria-labelledby="modalAdriano" aria-hidden="true">
+          <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+            <div class="modal-content">
+              <div class="modal-header light-blue darken-3 white-text mb-1">
+                <h4 class="title">Currículo Completo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body px-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center mt-1" id="imagemAdriano">
+                      <div class="col-12 wow fadeInRight d-flex justify-content-center align-items-start">
+                        <div class="d-block text-center">
+                          <img src="assets/home-nossaEquipe-adriano.png" alt="Imagem Adriano Faria Rosa" class="img-responsive z-depth-5 added-images">
+                          <div class="text-center mx-1 mx-sm-5 mt-5 fw-400">
+                            <div class="justify-content-center">
+                              <a href="tel:(12)99174-4854" type="button" class="btn btn-ligacao-profissionais waves-effect waves-light">
+                                <i class="fa fa-2x fa-phone d-sm-none" style="color: white; transform: rotateY(180deg);"></i>
+                                <span class="d-none d-sm-block">Ligar</span>
+                              </a>
+                              <a type="button" class="btn btn-primary btn-email-profissionais waves-effect waves-light" data-toggle="modal" data-target="#modalContatoAdrianoPC">
+                                <i class="fa fa-2x fa-envelope d-sm-none" style="color: white"></i>
+                                <span class="d-none d-sm-block">Email</span>
+                              </a>
+                            </div>
+                            <div class="justify-content-center mt-3">
+                              <a href="mailto:adriano@mcfr.com.br" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Email: </strong>adriano@mcfr.com.br</a>
+                              <a href="tel:(12)991744854" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Telefone: </strong>(12) 99174-4854</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 d-flex justify-content-center mt-4 mt-lg-0 black-text">
+                      <div class="col-12 justify-content-center align-items-center px-0">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center font-weight-bold mb-1">Adriano Migli de Faria Rosa:</h4>
+                          <p class="lead text-justify text-center">
+                            Sócio administrador do MCFR Advogados e líder das áreas de contencioso cível e consultivo empresarial/comercial,
+                            com vasta experiência e atuação perante o poder judiciário.
+                            <br>
+                            Trabalha lado a lado dos clientes, tratando seus problemas de maneira personalizada, prestando consultoria jurídica
+                            em variadas questões de direito civil, comercial, trabalhista e societário, auxiliando empresas e empresários no seu
+                            planejamento jurídico de forma multidisciplinar.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            Já coordenou procedimentos complexos, inclusive de cisão empresarial, planejamento sucessório, reorganização e blindagem patrimonial.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            É reconhecido pelo seu elevado índice de sucesso na representação de interesses de seus clientes na resolução de conflitos,
+                            tanto âmbito judicial quanto extrajudicial, destacando-se por sua habilidade em questões contábeis e financeiras, além de
+                            sua notória capacidade de negociação.
+                          </p>
+                        </div>
+                        <hr class="hr-dark wow fadeInRight">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center">Formação Acadêmica:</h4>
+                          <ul>
+                            <li class="lead itens-curriculo">
+                              <strong>Vice-presidente da 46ª subseção da Ordem dos Advogados do Brasil</strong>, subseção da cidade de Jacareí/SP, triênio 2019/2021
+                            </li>
+                            <li class="lead itens-curriculo">
+                              Pós-Graduado em Direito Processual Civil, <strong>Pontifícia Universidade Católica de São Paulo – PUC-SP/COGEA, 2013</strong></li>
+                            <li class="lead itens-curriculo">
+                              Formado pela <strong>Faculdade de Direito da Universidade de São Paulo (Largo São Francisco) – USP, 2010</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex py-1">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="align-items-center justify-content-center">
+                        <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalBruna" tabindex="-1" role="dialog" aria-labelledby="modalBruna" aria-hidden="true">
+          <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+            <div class="modal-content">
+              <div class="modal-header light-blue darken-3 white-text mb-1">
+                <h4 class="title">Currículo Completo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body px-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center mt-1" id="imagemBruna">
+                      <div class="col-12 wow fadeInRight d-flex justify-content-center align-items-center">
+                        <div class="d-block text-center">
+                          <img src="assets/home-nossaEquipe-bruna.png" alt="Imagem Bruna Prado de Novaes" class="img-responsive z-depth-5 added-images">
+                          <div class="text-center mx-1 mx-sm-5 mt-5 fw-400">
+                            <div class="justify-content-center">
+                              <a type="button" class="btn btn-primary btn-email-profissionais waves-effect waves-light" data-toggle="modal" data-target="#modalContatoBrunaPC">
+                                <i class="fa fa-2x fa-envelope d-sm-none" style="color: white"></i>
+                                <span class="d-none d-sm-block">Email</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="justify-content-center mt-3">
+                            <a href="mailto:bruna@mcfr.com.br" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Email: </strong>bruna@mcfr.com.br</a>
+                            <a href="tel:(12)39537038" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Telefone: </strong>(12) 3953-7038</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 d-flex justify-content-center mt-4 mt-lg-0 black-text">
+                      <div class="col-12 justify-content-center align-items-center px-0">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center font-weight-bold mb-1">Bruna Prado de Novaes:</h4>
+                          <p class="lead text-justify text-center">
+                            Bruna atua em ações cíveis e trabalhistas, com destaque para as causas de direito do consumidor, imobiliário e
+                            litígios que envolvam a posse e a propriedade. Dentre sua diversificada experiência, destaca-se prestando assessoria
+                            jurídica a empresas que estejam experimentando graves dificuldades financeiras.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            Desde o início de sua graduação, Bruna dedica-se paralelamente aos estudos sobre Direito Ambiental
+                            e processos difusos e coletivos. Sendo então, autora de diversos artigos científicos nestas áreas
+                            do Direito.
+                          </p>
+                        </div>
+                        <hr class="hr-dark wow fadeInRight">
+                        <div class="mb-2">
+                          <ul>
+                            <li class="lead itens-curriculo"><strong>Pós-Graduanda em Direito do Trabalho e Processo do Trabalho</strong> pela Escola Paulista de Direito - EPD, (término em 2021)</li>
+                            <li class="lead itens-curriculo"><strong>Pós-Graduada em Direito Civil e Processo Civil</strong> pela Escola Paulista de Direito - EPD</li>
+                            <li class="lead itens-curriculo"><strong>Presidente</strong> da Comissão do Meio Ambiente da 46ª Subseção da OAB, subseção de Jacareí/SP, <strong>triênio 2019/2021</strong></li>
+                            <li class="lead itens-curriculo"><strong>Presidente</strong> da Comissão do Meio Ambiente da 46ª Subseção da OAB, subseção de Jacareí/SP, <strong>triênio 2016/2018</strong></li>
+                            <li class="lead itens-curriculo">Formada em Direito pela <strong>Universidade Estadual de Maringá, 2013</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex py-1">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="align-items-center justify-content-center">
+                        <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalAna" tabindex="-1" role="dialog" aria-labelledby="modalAna" aria-hidden="true">
+          <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+            <div class="modal-content">
+              <div class="modal-header light-blue darken-3 white-text mb-1">
+                <h4 class="title">Currículo Completo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body px-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center mt-1" id="imagemAna">
+                      <div class="col-12 wow fadeInRight d-flex justify-content-center align-items-center">
+                        <div class="d-block text-center">
+                          <img src="assets/home-nossaEquipe-ana.png" alt="Imagem Ana Flávia Ramos" class="img-responsive z-depth-5 added-images">
+                          <div class="justify-content-center mt-5">
+                            <a type="button" class="btn btn-primary btn-email-profissionais waves-effect waves-light" data-toggle="modal" data-target="#modalContatoAnaPC">
+                              <i class="fa fa-2x fa-envelope d-sm-none" style="color: white"></i>
+                              <span class="d-none d-sm-block">Email</span>
+                            </a>
+                          </div>
+                          <div class="justify-content-center mt-3">
+                            <a href="mailto:ana@mcfr.com.br" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Email: </strong>ana@mcfr.com.br</a>
+                            <a href="tel:(12)39537038" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Telefone: </strong>(12) 3953-7038</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 d-flex justify-content-center mt-4 mt-lg-0 black-text">
+                      <div class="col-12 justify-content-center align-items-center px-0">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center font-weight-bold mb-1">Ana Flávia Ramos:</h4>
+                          <p class="lead text-justify text-center">
+                            Embora jovem advogada, Ana Flávia possui vasta experiencia em contencioso cível e trabalhista, pois integra equipe do MCFR há seis anos.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            Ana Flávia se destaca no atendimento de empresas e condomínios que precisem de agilidade na cobrança de seus créditos.
+                          </p>
+                        </div>
+                        <hr class="hr-dark wow fadeInRight">
+                        <div class="mb-2">
+                          <ul>
+                            <li class="lead itens-curriculo">Formada em Direito pela Universidade Paulista <strong>Unip, 2018</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex py-1">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="align-items-center justify-content-center">
+                        <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalMarcelo" tabindex="-1" role="dialog" aria-labelledby="modalMarcelo" aria-hidden="true">
+          <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+            <div class="modal-content">
+              <div class="modal-header light-blue darken-3 white-text mb-1">
+                <h4 class="title">Currículo Completo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body px-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center mt-2 mt-lg-0 black-text">
+                      <div class="col-12 justify-content-center align-items-center px-0">
+                        <div class="mb-2">
+                          <h4 class="h3-responsive text-center font-weight-bold mb-1">Marcelo Cápua:</h4>
+                          <p class="lead text-center">
+                            Vasta experiência em disputas judiciais complexas, inclusive envolvendo questões imobiliárias, contratuais,
+                            bancárias e de consumidor. Na área trabalhista, representa tanto empregados, quanto empregadores, em ações
+                            sofisticadas e com alto valor envolvido.
+                          </p>
+                          <p class="lead text-justify text-center">
+                            Marcelo se destaca por seus trabalhos com relação à propriedade imobiliária, seja administrativamente ou em ações judiciais.
+                            Atuando também com muito êxito na área do Direito Público, nos ramos Administrativo e Tributário.
+                          </p>
+                        </div>
+                        <div class="justify-content-center text-center">
+                          <a type="button" class="btn btn-primary btn-email-profissionais waves-effect waves-light" data-toggle="modal" data-target="#modalContatoMarceloPC">
+                            <i class="fa fa-2x fa-envelope d-sm-none" style="color: white"></i>
+                            <span class="d-none d-sm-block">Email</span>
+                          </a>
+                        </div>
+                        <div class="justify-content-center text-center mt-3">
+                          <a href="mailto:marcelo@mcfr.com.br" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Email: </strong>marcelo@mcfr.com.br</a>
+                          <a href="tel:(12)39537038" class="lead itens-curriculo black-text mx-1"><strong class="font-weight-bold">Telefone: </strong>(12) 3953-7038</a>
+                        </div>
+                        <hr class="hr-dark wow fadeInRight">
+                        <div class="mb-2">
+                          <ul>
+                            <li class="lead itens-curriculo">
+                              Pós-Graduado em Direito Tributário pela <strong>FGV/GVlaw –2015</strong>
+                            </li>
+                            <li class="lead itens-curriculo">
+                              Pós-Graduado em Direito Imobiliário pela <strong>PUC/SP – COGEAE – 2014</strong>
+                            </li>
+                            <li class="lead itens-curriculo">
+                              Formado em Direito pela <strong>PUC/SP, 2009</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex py-1">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="align-items-center justify-content-center">
+                        <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="modaisContatoDirecionadasProfissionais">
+        <div class="modal fade" id="modalContatoMarisaPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoMarisaPC" aria-hidden="true" >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Enviar um E-Mail para Marisa</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form name="marisa-form">
+                <div class="modal-body mx-3">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoMarisaPC-nome" name="nome">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarisaPC-nome" class="">Seu Nome</label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" class="form-control validate" id="modalContatoMarisaPC-email" name="email">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarisaPC-email">Seu Email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-phone-square prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoMarisaPC-telefone" name="telefone">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarisaPC-telefone">Seu Telefone</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-comments prefix grey-text"></i>
+                    <textarea type="text" class="md-textarea form-control validate" rows="4" id="modalContatoMarisaPC-mensagem" name="mensagem"></textarea>
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarisaPC-mensagem">Sua Mensagem</label>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button id="contatoDiretoModalMarisa" type="button" onclick="enviaForm('formMarisa')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalContatoMarceloPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoMarceloPC" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Enviar um E-Mail para Marcelo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form name="marcelo-form">
+                <div class="modal-body mx-3">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoMarceloPC-nome" name="nome">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarceloPC-nome" class="">Seu Nome</label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" class="form-control validate" id="modalContatoMarceloPC-email" name="email">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarceloPC-email">Seu Email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-phone-square prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoMarceloPC-telefone" name="telefone">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarceloPC-telefone">Seu Telefone</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-comments prefix grey-text"></i>
+                    <textarea type="text" class="md-textarea form-control validate" rows="4" id="modalContatoMarceloPC-mensagem" name="mensagem"></textarea>
+                    <label data-error="Errado" data-success="Certo" for="modalContatoMarceloPC-mensagem">Sua Mensagem</label>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button id="contatoDiretoModalMarcelo" type="button" onclick="enviaForm('formMarcelo')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalContatoAdrianoPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoAdrianoPC" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Enviar um E-Mail para Adriano</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form name="adriano-form">
+                <div class="modal-body mx-3">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoAdrianoPC-nome" name="nome">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAdrianoPC-nome" class="">Seu Nome</label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" class="form-control validate" id="modalContatoAdrianoPC-email" name="email">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAdrianoPC-email">Seu Email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-phone-square prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoAdrianoPC-telefone" name="telefone">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAdrianoPC-telefone">Seu Telefone</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-comments prefix grey-text"></i>
+                    <textarea type="text" class="md-textarea form-control validate" rows="4" id="modalContatoAdrianoPC-mensagem" name="mensagem"></textarea>
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAdrianoPC-mensagem">Sua Mensagem</label>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button id="contatoDiretoModalAdriano" type="button" onclick="enviaForm('formAdriano')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalContatoBrunaPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoBrunaPC" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Enviar um E-Mail para Bruna</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form name="bruna-form">
+                <div class="modal-body mx-3">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoBrunaPC-nome" name="nome">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoBrunaPC-nome" class="">Seu Nome</label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" class="form-control validate" id="modalContatoBrunaPC-email" name="email">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoBrunaPC-email">Seu Email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-phone-square prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoBrunaPC-telefone" name="telefone">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoBrunaPC-telefone">Seu Telefone</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-comments prefix grey-text"></i>
+                    <textarea type="text" class="md-textarea form-control validate" rows="4" id="modalContatoBrunaPC-mensagem" name="mensagem"></textarea>
+                    <label data-error="Errado" data-success="Certo" for="modalContatoBrunaPC-mensagem">Sua Mensagem</label>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button id="contatoDiretoModalBruna" type="button" onclick="enviaForm('formBruna')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalContatoAnaPC" tabindex="-1" role="dialog" aria-labelledby="modalContatoAnaPC" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Enviar um E-Mail para Ana Flavia</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form name="ana-form">
+                <div class="modal-body mx-3">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoAnaPC-nome" name="nome">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAnaPC-nome" class="">Seu Nome</label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" class="form-control validate" id="modalContatoAnaPC-email" name="email">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAnaPC-email">Seu Email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-phone-square prefix grey-text"></i>
+                    <input type="text" class="form-control validate" id="modalContatoAnaPC-telefone" name="telefone">
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAnaPC-telefone">Seu Telefone</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-comments prefix grey-text"></i>
+                    <textarea type="text" class="md-textarea form-control validate" rows="4" id="modalContatoAnaPC-mensagem" name="mensagem"></textarea>
+                    <label data-error="Errado" data-success="Certo" for="modalContatoAnaPC-mensagem">Sua Mensagem</label>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button id="contatoDiretoModalAna" type="button" onclick="enviaForm('formAna')" class="btn btn-enviar-modal-contato-profissionais waves-effect">ENVIAR! <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="modal fade" id="modalContatoNavbar" tabindex="-1" role="dialog" aria-labelledby="modalContatoNavbar" aria-hidden="true">
+      <div class="modal-dialog modal-fluid cascading-modal " role="document" style="max-width: 95%!important;">
+        <div class="modal-content">
+          <div class="modal-header darken-3 white-text mb-1">
+            <h4 class="title"><i class="fa fa-phone"></i> Contato</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body px-2 px-md-5">
+            <section class="contact-section">
+              <div class="card">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="card-body contact text-center h-100 white-text pb-0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.277290247883!2d-45.975275684600355!3d-23.305695984810406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb64550a5c13%3A0xd4d290ee633c1ee0!2sMigli%2C+C%C3%A1pua+e+Faria+Rosa+Advogados!5e0!3m2!1spt-BR!2sbr!4v1540240713568" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      <h3 class="px-2 mt-3">Informações para Contato </h3>
+                      <ul class="text-center list-inline mb-0">
+                        <li class="list-inline-item">
+                          <a class="border border-light rounded waves-effect waves-light text-white px-3 py-2" href="tel:123953-7038"><i class="fa fa-phone pr-2 text-white"></i>Ligar: (12)3953-7038</a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="border border-light rounded waves-effect waves-light text-white px-3 py-2" href="mailto:mcfr@mcfr.com.br" style="word-break: break-all;"><i class="fa fa-envelope pr-2 text-white"></i>mcfr@mcfr.com.br</a>
+                        </li>
+                        <li class="d-none d-sm-inline-block list-inline-item">
+                          <a class="border border-light in rounded waves-effect waves-light text-white px-3 py-2"><i class="far fa-clock pr-2 text-white"></i>Segunda a Sexta - 8h as 19h</a>
+                        </li>
+                        <li class="d-none d-sm-inline-block list-inline-item"  style="margin-right: 10px;">
+                          <a style="word-break: break-all;" class="border border-light rounded waves-effect waves-light text-white px-3 py-2" href="https://goo.gl/maps/irmQms7Aqvn"><i class="fas fa-map-marker-alt pr-2 text-white"></i>
+                            Praça Anchieta, 135, salas 11 e 12 - Jacareí, SP
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="card-body form">
+                      <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Fale Conosco:</h3>
+                      <form id="modalContato-form" name="modalContato-form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-name" name="nome" class="form-control">
+                              <label for="form-contact-name" class="">Seu Nome</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-email" name="email" class="form-control">
+                              <label for="form-contact-email" class="">Seu e-mail</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-phone" name="telefone" class="form-control">
+                              <label for="form-contact-phone" class="">Seu Telefone</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" id="form-contact-company" name="assunto" class="form-control">
+                              <label for="form-contact-company" class="">Assunto</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="md-form mb-0">
+                              <textarea type="text" id="form-contact-message" name="mensagem" class="form-control md-textarea" rows="5"></textarea>
+                              <label for="form-contact-message">Sua Mensagem</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center">
+                              <button type="button" class="btn btn-outline-modal-contato btn-rounded waves-effect px-3" onclick="enviaForm('formModalContato')">Enviar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer d-flex py-1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="align-items-center justify-content-center">
+                    <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade modal" id="modalComunicadoCovid" tabindex="-1" role="dialog" aria-labelledby="modalContatoNavbar" aria-hidden="true">
+      <div class="modal-dialog modal-fluid cascading-modal" role="document" style="max-width: 70%!important;">
+        <div class="modal-content" style="background-color: rgba(255, 255, 255, 0.85);">
+          <div class="modal-header bg-roxo white-text mb-1">
+            <h4 class="title">COBATE AO COVID-19 E SUAS CONSEQUÊNCIAS</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-left black-text fw-500 font-italic">
+              <p>Prezados Clientes,</p>
+              <p>
+                Informamos que, além do trabalho nas suas respectivas áreas de atuação, cada sócio vem focando os esforços de sua equipe em determinadas demandas surgidas ou intensificadas em razão da atual crise, buscando atender os clientes com maior agilidade e respaldo técnico:
+              </p>
+              <p>
+                - A sócia <a href="#" onclick="changeModal('#modalComunicadoCovid','#modalBruna')" style="text-decoration: underline;">Bruna Prado</a> vem auxiliando clientes, empregados e empregadores, a tratar das repercussões trabalhistas advindas da crise na economia, inclusive no entendimento e aplicação prática das medidas provisórias já publicadas pelo Governo Federal (MP 927 e MP 936), que tratam sobre redução de jornada de trabalho, suspensão temporária de contrato de trabalho, antecipação de férias, prorrogação de prazo de pagamento de FGTS, dentre outros.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99178-7747">(12) 98152-0019</a> // E-mail: <a href="mailto:bruna@mcfr.com.br">bruna@mcfr.com.br</a>
+              </p>
+              <p>
+                - O sócio <a href="#"  onclick="changeModal('#modalComunicadoCovid','#modalAdriano')" style="text-decoration: underline;">Adriano Migli de Faria Rosa</a> está centralizando as demandas trazidas pelos clientes com relação à necessidade renegociação de contratos comerciais (locação, fornecedores, clientes, acordos judiciais etc.), tanto por meio de negociação extrajudicial, quanto via pedido judicial.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99174 4854">(12) 99174 4854</a> // E-mail: <a href=mailto:"adriano@mcfr.com.br">adriano@mcfr.com.br</a>
+              </p>
+              <p>
+                - A sócia <a href="#" onclick="changeModal('#modalComunicadoCovid','#modalMarisa')" style="text-decoration: underline;">Marisa Migli,</a> com sua experiência na área de direito de família e sucessões, está atuando com foco na renegociação de pensão alimentícia, alteração de regime de guarda de menores, obtenção de alvarás em inventários de maneira célere etc.
+              </p>
+              <p class="text-center">
+                Telefone/WhatsApp: <a href="tel:(12) 99178-7747">(12) 99178-7747</a> // E-mail: <a href="mailto:marisa@mcfr.com.br">marisa@mcfr.com.br</a>
+              </p>
+              <p>
+                Desejamos a todos muita saúde e uma breve retomada da normalidade econômica!
+              </p>
+              <p>
+                Migli, Cápua e Faria Rosa Advogados
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer d-flex py-1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="align-items-center justify-content-center">
+                    <button type="button" class="btn btnFechar-modalAreasDeAtuacao btn-rounded waves-effect d-flex mx-auto" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer font-small footer-custom-color">
+    <div class="container-fluid social-custom-color">
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="row">
+            <div class="col-12">
+              <div class="my-2 flex-center">
+                <a class="fb-ic" href="tel:123954-7038">
+                  <i class="fas fa-phone fa-lg white-text fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="tel:123954-7038"><span class="font-weight-bold" style="font-size: 1.1rem;">Ligar</span><br>(12)3953-7038</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="row">
+            <div class="col-12">
+              <div class="my-2 flex-center">
+                <a class="fb-ic" href="mailto:mcfr@mcfr.com.br">
+                  <i class="fas fa-envelope-open-text fa-2x white-text"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="mailto:mcfr@mcfr.com.br"><span class="font-weight-bold" style="font-size: 1.1rem;">Email</span><br> mcfr@mcfr.com.br</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="my-2 flex-center">
+                <a href="https://goo.gl/maps/irmQms7Aqvn">
+                  <i class="fas fa-map-marked-alt fa-2x white-text"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center my-1">
+                <a href="https://goo.gl/maps/irmQms7Aqvn"><span class="font-weight-bold" style="font-size: 1.1rem;">Endereço</span><br> Praça Anchieta, 135, salas 11 e 12 - Jacareí, SP</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 text-center">
+          <p class="text-center lead fw-500 my-3 h3-responsive">Atendemos em São José dos Campos, São Paulo e Jacareí. Entre em contato conosco para agendar um horário!</p>
+        </div>
+        <div class="col-md-5 text-center pt-4">
+          <iframe class="wow fadeIn slower animated" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.277290247883!2d-45.975275684600355!3d-23.305695984810406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb64550a5c13%3A0xd4d290ee633c1ee0!2sMigli%2C+C%C3%A1pua+e+Faria+Rosa+Advogados!5e0!3m2!1spt-BR!2sbr!4v1540240713568" width="80%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mt-1">
+              <i class="far fa-clock fa-lg white-text fa-2x my-2 wow fadeInUp animated"></i>
+              <p class="wow fadeInUp slower animated">
+                <span class="font-weight-bold" style="font-size: 1.1rem;">Horário de Atendimento</span><br>
+                Segunda a Sexta - 8h as 19h
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-7 my-4 px-lg-5 wow fadeInRight slower animated">
+          <div class="card px-2 py-3 mx-3">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="font-weight-normal text-center black-text">Fale Conosco</h4>
+              </div>
+            </div>
+            <form id="footer-form" name="footer-form">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-name" name="nome" class="form-control">
+                      <label for="footer-name" class="">Nome</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-email" name="email" class="form-control">
+                      <label for="footer-email" class="">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12 py-1">
+                    <div class="md-form mb-0">
+                      <input type="text" id="footer-phone" name="telefone" class="form-control" maxlength="14">
+                      <label for="footer-phone" class="">Seu Telefone</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="md-form mb-0">
+                    <input type="text" id="footer-subject" name="assunto" class="form-control">
+                    <label for="footer-subject" class="">Assunto</label>
+                  </div>
+                  <div class="md-form">
+                    <textarea type="text" id="footer-message" name="mensagem" class="form-control md-textarea" rows="5"></textarea>
+                    <label for="footer-message">Texto do Email</label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-primary btn-lg btn-block btn-footer-contact" id="btn-send-email-footer" onclick="enviaForm('formFooter')">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright copyright-custom-color text-center py-3">
+      <p class="mb-0 animated pulse infinite slow delay-2s">
+        © 2018 Copyright:<a href="http://www.galileosoft.com.br"> GalileoSoft</a>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+
+  </script>
+  <script>
+      // Animations init
+      var largura = screen.width;
+      if( largura >= 768 ){
+          new WOW().init();
+      }
+      // Efeito de slide do banner para celular
+      $(document).ready(function () {
+        $('#carousel-home').hammer().on('swipeleft', function () {
+          $(this).carousel('next');
+        });
+        $('#carousel-home').hammer().on('swiperight', function () {
+          $(this).carousel('prev');
+        });
+        setTimeout(showComunicadoCovid, 2000);
+      });
+      function showComunicadoCovid(){
+        $("#modalComunicadoCovid").modal('show');
+      }
+      function changeModal(modalQueSai,modalQueEntra) {
+        $(modalQueSai).modal('hide');
+        $(modalQueSai).on('hidden.bs.modal', function(){
+          $(modalQueEntra).modal('show');
+        });
+      }
+      // ScrollToTop Navbar
+      function scrollToTop() {
+          $('body, html').animate({scrollTop: 0});
+      }
+      // Smooth Scroll para botões
+      function scrollToSection(section){
+      $(section).trigger('click');
+      }
+      // Smooth Scroll para Navbar
+      $(".smooth-scroll-2").on('click', 'a', function (event) {
+          event.preventDefault();
+          var elAttr = $(this).attr('href'),
+              offset = ($(this).data('offset') ? $(this).data('offset') : 0);
+          offset = offset - 65;
+          $('body,html').animate({
+              scrollTop: $(elAttr).offset().top + offset
+          }, 700);
+      });
+      // ScrollSpy
+      $(window).on("scroll", function () {
+          var scrollPosition = $(window).scrollTop() + ($(window).height()/3);
+          var homePosition = $('#carousel-home').height();
+          var sevicosPosition = $('#areasDeAtuacao').height() + homePosition;
+          var equipePosition = $('#nossaEquipe').height() + sevicosPosition;
+          if (scrollPosition <= homePosition) {
+              $('#navbar-index').addClass('active');
+              $('#navbar-areasDeAtuacao').removeClass('active');
+              $('#navbar-profissionais').removeClass('active');
+              $('#navbar-contato').removeClass('active');
+          }
+          else if(scrollPosition > homePosition && scrollPosition <= sevicosPosition){
+              $('#navbar-index').removeClass('active');
+              $('#navbar-areasDeAtuacao').addClass('active');
+              $('#navbar-profissionais').removeClass('active');
+              $('#navbar-contato').removeClass('active');
+          }
+          else if(scrollPosition > sevicosPosition && scrollPosition <= equipePosition){
+              $('#navbar-index').removeClass('active');
+              $('#navbar-areasDeAtuacao').removeClass('active');
+              $('#navbar-profissionais').addClass('active');
+              $('#navbar-contato').removeClass('active');
+          }
+          else{
+              $('#navbar-index').removeClass('active');
+              $('#navbar-areasDeAtuacao').removeClass('active');
+              $('#navbar-profissionais').removeClass('active');
+              $('#navbar-contato').addClass('active');
+          }
+      });
+
+
+      //Loader para Envio de Forms
+      function ShowLoader() {
+        var overlay = jQuery(
+          '<div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); z-index: 10000;">' +
+          '   <div style="text-align: center; width: 100%; position: absolute; top: 40%; margin-top: -50px;"> ' +
+          '       <div class="preloader-wrapper big active"> ' +
+          '           <div class="spinner-layer spinner-blue"> ' +
+          '              <div class="circle-clipper left"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div>' +
+          '              <div class="gap-patch"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div>' +
+          '              <div class="circle-clipper right"> ' +
+          '                 <div class="circle"></div> ' +
+          '              </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-red"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-yellow"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch">  ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '           <div class="spinner-layer spinner-green"> ' +
+          '               <div class="circle-clipper left"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="gap-patch"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div>' +
+          '               <div class="circle-clipper right"> ' +
+          '                   <div class="circle"></div> ' +
+          '               </div> ' +
+          '           </div> ' +
+          '       </div> ' +
+          '   </div> ' +
+          '</div>');
+        overlay.appendTo(document.body);
+      }
+      function HideLoader() {
+        $('#loading-overlay').remove();
+      }
+      function notificaErro(titulo,mensagem) {
+        toastr.error(mensagem,titulo);
+      }
+      function enviaForm(origem) {
+        var validado = 1;
+        if(origem==='formFooter'){
+          $("#footer-form > div > div > div > div > input").each(function () {
+            if(this.value==""){
+              validado  = 0;
+              return false
+            }
+          });
+          $("#footer-form > div > div> div > input").each(function () {
+            if(this.value==""){
+              validado  = 0;
+              return false
+            }
+          });
+          if (validado===0){
+            notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+          }
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#footer-form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["submit"] = 'ok';
+
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formModalContato'){
+          $("#modalContato-form > div > div > div > input").each(function () {
+            if(this.value==""){
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              validado  = 0;
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContato-form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["submit"] = 'ok';
+
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formMarisa'){
+          $("#modalContatoMarisaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+          var formData = $("#modalContatoMarisaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formMarcelo'){
+          $("#modalContatoMarceloPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoMarceloPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formAdriano'){
+          $("#modalContatoAdrianoPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoAdrianoPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formBruna'){
+          $("#modalContatoBrunaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoBrunaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+        if(origem==='formAna'){
+          $("#modalContatoAnaPC > div > div > form > div > div > input").each(function () {
+            console.log('antes do this.value:');
+            console.log(this.value);
+            if(this.value==""){
+              validado  = 0;
+              notificaErro('Um campo obrigatório nao foi preenchido!', 'Confira se digitou seu Nome, Email, Telefone e Mensagem');
+              return false
+            }
+          });
+          if (validado === 1){
+            ShowLoader();
+            var formData = $("#modalContatoAnaPC > div > div > form").serializeArray();
+            var dataObj = {};
+            $(formData).each(function(i, field){
+              dataObj[field.name] = field.value;
+            });
+            dataObj["origem"] = origem;
+            dataObj["assunto"] = 'Não Informado';
+            dataObj["submit"] = 'ok';
+            $.ajax({
+              type: "POST",
+              url: "php/handlerSendEmail.php",
+              data: dataObj,
+              dataType: "json",
+              success: function (data) {
+                if(data.tipo==="sucesso"){
+                  HideLoader();
+                  toastr.success(data.mensagem,data.titulo);
+                }
+                else{
+                  HideLoader();
+                  toastr.error(data.mensagem,data.titulo);
+                }
+              }
+            });
+          }
+        }
+      }
+  </script>
+</body>
+</html>

@@ -53,7 +53,7 @@ if(empty($name)||empty($visitor_email)||empty($phone)||empty($subject)||empty($m
 
 require_once ($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php') ;
 //require_once ('/var/www/html/galileosoft.com.br/site-maonaroda/vendor/autoload.php') ;
-//require_once ('/var/www/html/site-mcfr/vendor/autoload.php');
+//require_once ('/var/www/html/site-mpfr/vendor/autoload.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -66,12 +66,12 @@ $mailer->SMTPAuth   = true;
 $mailer->Port = 587;
 $mailer->SMTPSecure = false;
 $mailer->SMTPAutoTLS = false;
-$mailer->Username   = 'site@mcfr.com.br';
+$mailer->Username   = 'site@mpfr.adv.br';
 $mailer->Password   = 'SMTP!01';
 //Pessoa que ENVIA o email
-$mailer->Sender = "site@mcfr.com.br"; //Email que envia
-$mailer->From = "site@mcfr.com.br"; //Email que aparece pra quem recebe
-$mailer->FromName = "Site - MCFR"; //Nome que aparece pra quem recebe
+$mailer->Sender = "site@mpfr.adv.br"; //Email que envia
+$mailer->From = "site@mpfr.adv.br"; //Email que aparece pra quem recebe
+$mailer->FromName = "Site - MPFR"; //Nome que aparece pra quem recebe
 //Pessoa que RECEBE o email
 //if ($origin)
 $mailer->addAddress('contato@galileosoft.com.br');
